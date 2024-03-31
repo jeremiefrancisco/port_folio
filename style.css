@@ -204,6 +204,13 @@ nav {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+#project-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.box {
+  margin-bottom: 50px;
+}
 
 
 .rows {
@@ -469,4 +476,55 @@ color: #868686;
 .contact-links {
   color: white;
   text-decoration: none;
+}
+
+
+@media only screen and (max-width: 900px) {
+  #menu-container {
+    height: 70px;
+  }
+  #nav-menu {
+    height: 40px;
+  }
+}
+/*iPhone 12*/
+
+@media only screen and (max-width: 460px) {
+  #menu-container {
+    height: 150px;
+  }
+  #nav-menu {
+    height: 130px;
+  }
+  #scroll-container {
+    margin-top: 700px;
+  }
+  #scroll-text {
+    font-size: 40px;
+    text-align: center;
+  }
+  spline-viewer {
+    width: 100%;
+  }
+  #outer-box {
+    margin-top: 150px;
+  }
+  #overview p {
+    font-size: 17px;
+  }
+  #project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #project-grid-header {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .rows {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .box {
+    margin-bottom: 50px;
+  }
 }
